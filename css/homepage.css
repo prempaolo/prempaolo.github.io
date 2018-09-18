@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+	text-decoration: none !important;
+	color: black;
+}	
+	
+body {
+  background-color: #e4ecee !important;
+  background-image: url('../img/ep_naturalwhite.png');
+}
+.clear {
+  clear: both;
+}
+/* Navigation */
+header {
+  margin: 30px 0px; 
+}
+.navbar {
+  display: inline-block;
+  width: 100%;
+}
+.bar {
+  border-radius: 6px;
+}
+.fa-search {
+  color: #7e8186;
+  padding-right: 10px;
+  padding-top: 5px;
+  font-size: 20px
+}
+.search {
+  position: relative;
+  bottom: 20px;
+  width: 100%;
+}
+#search-bar {
+  float: right;
+  height: 30px;
+  width: 88%;
+  background-color: #ffffff;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+@media (max-width: 394px) {
+  #search-bar {
+    width: 85% !important;
+  }
+}
+@media (max-width: 616px) {
+  #search-bar {
+    width: 88%;
+  }
+}
+@media (min-width: 617px) {
+  #search-bar {
+    width: 92%;
+  }
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #7e8186;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #7e8186;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #7e8186;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #7e8186;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #7e8186;
+}
+.logo {
+  width: 100%;
+}
+#news-title {
+	max-width: 270px;
+}
+.textLogo {
+  text-transform: uppercase;
+  color: #7e8186;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  width:100%;
+}
+
+/* Cards */
+.card {
+  -webkit-box-shadow: 10px 10px 7px -7px rgba(189,189,189,1);
+  -moz-box-shadow: 10px 10px 7px -7px rgba(189,189,189,1);
+  box-shadow: 10px 10px 7px -7px rgba(189,189,189,1);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.card-child {
+  margin-top: 10px;
+}
+
+.card-img-top {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-calendar {
+  font-size: 18px;
+}
+
+#foot {
+  padding-bottom: 20px;
+}
+	
+input[type=text] {
+	color: #7e8186;
+}
+	
+.score {
+	font-family: 'Roboto Mono', monospace !important;
+	color: #f05023;
+}
+	
+.fa-heart {
+	color: #f05023;
+}
+
+.modal-dialog {
+	width: auto !important;
+}
+
+.modal-content {
+	width: 100% !important;
+}
+
+.googlebar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+.googlebar-container .googlebar {
+  position: relative;
+  padding: 1px;
+  width: 620px;
+  max-width: 90vw; }
+.googlebar-container .googlebar #google-query-field {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif; }
+.googlebar-container .googlebar #google-query-field::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #D9D9D9; }
+.googlebar-container .googlebar #google-query-field:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #D9D9D9;
+  opacity: 1; }
+.googlebar-container .googlebar #google-query-field::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #D9D9D9;
+  opacity: 1; }
+.googlebar-container .googlebar #google-query-field:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #D9D9D9; }
+.googlebar-container .googlebar .googlebar-suggestions {
+z-index: 100;
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%; }
+.googlebar-container .googlebar .googlebar-suggestions .googlebar-suggestion {
+  margin: 0em 0;
+  padding: .5em;
+  background-color: #ffffff;
+  color: #363636; }
+.googlebar-container .googlebar .googlebar-suggestions .googlebar-suggestion:first-of-type {
+  margin-top: 2px; }
+.googlebar-container .googlebar .googlebar-suggestions .googlebar-suggestion.selected {
+  background-color: #363636;
+  color: #E8E8E8; }
+.googlebar-container .googlebar .googlebar-suggestions .googlebar-suggestion .googlebar-suggestion-child {
+  color: #363636;
+}
+.googlebar-container .googlebar .googlebar-suggestions .googlebar-suggestion.selected .googlebar-suggestion-child {
+  color: #E8E8E8;
+}
