@@ -121,9 +121,9 @@
             SearchCompleter.clearCompletions();
         }
     });
-    return googleQueryField.focus(function() {
-      return SearchCompleter.complete(googleQueryField);
-    });
+		return googleQueryField.focus(function() {
+		  return SearchCompleter.complete(googleQueryField);
+		});
   });
 
 }).call(this);
