@@ -101,7 +101,7 @@ $(document).ready(function(){
 		  		$("#title-card-link-" + cardnum).attr("href","https://reddit.com" + data["data"]["children"][postnum]["data"]["permalink"]);
       		}, 
       		error: function(errorMessage){
-        		alert("Reddit ajax call failed");
+        		alert("Reddit ajax call failed: "+errorMessage.toString());
 	  		}
       
     	}); // END ajax call
@@ -146,7 +146,7 @@ $(document).ready(function(){
 		  		$("#title-card-link-" + cardnum).attr("href","https://reddit.com" + data[0]["data"]["children"][postnum]["data"]["permalink"]);
       		}, 
       		error: function(errorMessage){
-        		alert("Reddit ajax call failed");
+        		alert("Reddit ajax call failed: "+errorMessage.toString());
 	  		}
       
     	}); // END ajax call
