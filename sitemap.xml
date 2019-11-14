@@ -78,12 +78,12 @@
   </url>
   
   <url>
-    <loc>/tags/golang/</loc>
+    <loc>/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/golang/</loc>
+    <loc>/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -123,82 +123,8 @@
   </url>
   
   <url>
-    <loc>/startpage/music/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/dsmorse-gridster.js-2808cd7/changelog/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/dsmorse-gridster.js-2808cd7/contributing/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/dsmorse-gridster.js-2808cd7/demos/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/dsmorse-gridster.js-2808cd7/readme/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/dsmorse-gridster.js-2808cd7/test/jquery.gridster-amd/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/dsmorse-gridster.js-2808cd7/test/jquery.gridster/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/flex/demo/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/flex/readme/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/homepage1/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/homepage_backup/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/homepage_old/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/others/startpage-master-1ec1795697a759d74af8eec63dd53ae346c841ca/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/startpage/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/startpage/test/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/startpage/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

@@ -38,7 +38,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Hi, I&amp;rsquo;m Paolo Prem, I finished my studies in Cyber Security and I play the guitar.
+      <description>Hi, I&amp;rsquo;m Paolo Prem, I finished my studies in Cyber Security and I play the guitar. This site is under development, as well as this page!
 Hobbies Play the guitar
 Play videogames
 Read books</description>
@@ -128,157 +128,13 @@ là-dedans. Avec Jekylll, l&amp;rsquo;arborescence ressemblant à ceci :&lt;/p&g
     
     <item>
       <title></title>
-      <link>/startpage/music/</link>
+      <link>/startpage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/startpage/music/</guid>
-      <description>   --    Startpage              
-Next Post 
-       BTC Price:       Next Post 
-   Next Thread 
-      BTC Price:       </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/dsmorse-gridster.js-2808cd7/changelog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/dsmorse-gridster.js-2808cd7/changelog/</guid>
-      <description>## v0.7.0 (2016-02-26) #### Bug Fixes * Apply fix from #22 to vertical positioning ([dfc64916](http://github.com/dsmorse/gridster.js/commit/dfc649168c5b6a2a230b90a47e19621a6937fc7c)) * convert from JQury to DOM ([4936ef82](http://github.com/dsmorse/gridster.js/commit/4936ef82c04690fde118c3d54b798ceaf7c376e6)) * **fn.generate_stylesheet:** only return new stylesheet if colWidth and this.$wrapper.width() are  0 ([f513793a](http://github.com/dsmorse/gridster.js/commit/f513793a8c0ec63509f6296325a8a7a6e34179f5)) * **gridster:** Add additiona error checking on widgets removal ([2b0f9963](http://github.com/dsmorse/gridster.js/commit/2b0f9963ef80c9acc6f66545eb53597836e2ebec))  ### v0.6.10 (2015-05-31) * Add Ruby on Rails support  ### v0.6.9 (2015-05-27) * bug fixes for positions and overlap * dist modified to support webpack deployements * new &#39;sticky&#39; layout option which allows widgets to be places absolutely into a position on the grid.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/dsmorse-gridster.js-2808cd7/contributing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/dsmorse-gridster.js-2808cd7/contributing/</guid>
-      <description>Contributing to this project Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
-Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue or assessing patches and features.
-Using the issue tracker The issue tracker is the preferred channel for bug reports, features requests and submitting pull requests, but please respect the following restrictions:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/dsmorse-gridster.js-2808cd7/demos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/dsmorse-gridster.js-2808cd7/demos/</guid>
-      <description>  Gridster Demos   Samples   Adding widgets dynamically Custom drag handle Expandable widgets Build grid from serialize Multiple gridster instances on the same page Resizable widgets Chaos Widgets Resizable widgets with constraints Serialize widgets positions Using drag callbacks Using resize callbacks Dynamic grid width Responsive grid width Grid with larger widgets swapping spots with smaller ones Grid that allows widgets to be exactly placed anywhere    </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/dsmorse-gridster.js-2808cd7/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/dsmorse-gridster.js-2808cd7/readme/</guid>
-      <description>Gridster.js Gridster is a jQuery plugin that makes building intuitive draggable layouts from elements spanning multiple columns. You can even dynamically add and remove elements from the grid.
-More at http://gridster.net/.
-Live Preview at: http://dsmorse.github.io/gridster.js/ Releases
-CHANGELOG
-Gridster was created by Ducksboard but they have basiclly abondoned the project and even those who had write permissions to the repo are not merging pull requests.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/dsmorse-gridster.js-2808cd7/test/jquery.gridster-amd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/dsmorse-gridster.js-2808cd7/test/jquery.gridster-amd/</guid>
-      <description>  gridster.js AMD Test Suite    gridster.js AMD Test Suite                            </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/dsmorse-gridster.js-2808cd7/test/jquery.gridster/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/dsmorse-gridster.js-2808cd7/test/jquery.gridster/</guid>
-      <description>  gridster.js Test Suite  jQuery.noConflict()          gridster.js Test Suite              </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/flex/demo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/flex/demo/</guid>
-      <description>jQuery plugin - Flex - Demo  body {background-color:#CCC;font-family:Verdana;} .flex {position:relative;width:850px;min-height:300px;margin:0 auto;border:0px solid red;margin-top:10px;} .flex a {background-color:white;display:block;width:100px;height:100px;border-radius:8px;position:absolute;background-repeat:no-repeat;background-position:center;border:3px solid white;cursor:pointer;text-align:left;text-shadow:1px 1px 20px #000;color:white;font-size:18px;font-weight:bold;text-indent:10px;line-height:30px;text-decoration:none;} [bg=a] {background-image:url(http://farm8.staticflickr.com/7013/6448917381_0b754e86fb_z.jpg);} [bg=b] {background-image:url(http://farm9.staticflickr.com/8156/7362866426_bf285ebd45.jpg);background-size:300px auto;} [bg=c] {background-image:url(http://farm6.staticflickr.com/5117/7410370290_0935419fc3.jpg);} [bg=d] {background-image:url(http://farm8.staticflickr.com/7262/7419245080_bb752ed1d6.jpg);} [bg=e] {background-image:url(http://farm8.staticflickr.com/7003/6468321069_3375be3073_z.jpg);background-size:auto 280px;} [bg=f] {background-image:url(http://farm8.staticflickr.com/7220/7342556872_46cddaf9b0.jpg);background-size:auto 280px;} [bg=g] {background-image:url(http://farm9.staticflickr.com/8021/7322604950_348c535903.jpg);background-size:auto 200px;} [bg=h] {background-image:url(http://farm8.staticflickr.com/7076/7286717012_6e6b450243.jpg);} [bg=i] {background-image:url(http://farm8.staticflickr.com/7129/7452167788_a3f6aa3104.jpg);background-size:auto 200px;} [bg=j] {background-image:url(http://farm8.staticflickr.com/7153/6480022425_a8d419e663_z.jpg);background-size:auto 280px;} [bg=k] {background-image:url(http://farm8.staticflickr.com/7225/7269592732_c4b7918626.jpg);background-size:auto 280px;} h1, h3 {width:850px;font-weight:normal;margin:0 auto;} h1 {margin-top:100px;} h3 {color:#666;margin-top:5px;} p {width:850px;margin:0;padding:0;margin:0 auto;font-size:14px;color:black;margin-top:0px;margin-bottom:20px;color:#989898;} #buttons {height:75px;width:850px;margin:0 auto;margin-top:10px;} #buttons a {float:left} .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/flex/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/flex/readme/</guid>
-      <description>Flex A fluid asymmetrical animated grid plugin for jQuery
-Flex is an idea inspired by the old flash homepage on Adidas.com. Searching google for anything that resembled that effect, lead me to a few plugins that were similar, but not the same. Saw one person say it was &amp;ldquo;quite impossible&amp;rdquo;, thought it would be a fun challenge.
-View Demo
-How to use Include the plugin after jQuery in your file</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/homepage1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/homepage1/</guid>
-      <description>Pinterest-like Responsive Grid - Bootsnipp.com /* Ref: Thanks to: http://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Style-Grid-Layout-Pinterest-Grid.html */ body { background-color:#eee; } #pinBoot { position: relative; max-width: 100%; width: 100%; } img { width: 100%; max-width: 100%; height: auto; } .white-panel { position: absolute; background: white; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); padding: 10px; } /* stylize any heading tags withing white-panel below */ .white-panel h1 { font-size: 1em; } .white-panel h1 a { color: #A92733; } .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/homepage_backup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/homepage_backup/</guid>
-      <description>      Startpage    Welcome                      
-Next Post 
-       BTC Price:       Next Post 
-   Next Thread 
-     </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/homepage_old/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/homepage_old/</guid>
-      <description>Startpage    Welcome         /r/EarthPorn                     /r/HipHopImages      /r/News  Next Thread 
- BTC Price:       /* Universal */ * { margin: 0; padding: 0; } a { text-decoration: none !</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/others/startpage-master-1ec1795697a759d74af8eec63dd53ae346c841ca/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/others/startpage-master-1ec1795697a759d74af8eec63dd53ae346c841ca/</guid>
-      <description>  Home                       Edit Entry  Cancel Save   Cancel  Save     </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/startpage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/startpage/</guid>
+      <guid>/startpage/</guid>
       <description>--     $(function(){ var includes = $(&#39;[data-include]&#39;); jQuery.each(includes, function(){ var file = &#39;views/&#39; + $(this).data(&#39;include&#39;) + &#39;.html&#39;; $(this).load(file); }); });  Startpage    Welcome                      --   
 Next Post 
        BTC Price:      Show content     Next Post</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/startpage/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/startpage/test/</guid>
-      <description>YOLO! </description>
     </item>
     
   </channel>
