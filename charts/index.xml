@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Charts on Paolo Prem</title>
+    <link>/charts/</link>
+    <description>Recent content in Charts on Paolo Prem</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/charts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My favorite albums</title>
+      <link>/charts/album/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/charts/album/</guid>
+      <description>This is a list of all my favorite albums of all time. It is not supposed to have an order, I will simply put a new album if I think that album is one of the greatest album ever done (of those I listened to so far).
+WARNING: this site is currently under development as well as the content of this page!
+Uncle Meat - Frank Zappa Absolutely my favorite Zappa album.</description>
+    </item>
+    
+  </channel>
+</rss>
