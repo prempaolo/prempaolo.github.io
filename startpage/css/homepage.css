@@ -10,6 +10,7 @@ a {
 body {
   background-color: #e4ecee !important;
   background-image: url('../img/ep_naturalwhite.png');
+	font-size: 1.5rem;
 }
 .clear {
   clear: both;
@@ -29,7 +30,7 @@ header {
   color: #7e8186;
   padding-right: 10px;
   padding-top: 5px;
-  font-size: 20px
+  font-size: 1.5rem;
 }
 .search {
   position: relative;
@@ -43,7 +44,7 @@ header {
   background-color: #ffffff;
   text-align: left;
   padding-left: 10px;
-  font-size: 16px;
+  font-size: 1.5rem;
   border: 2px solid transparent;
   border-radius: 5px;
 }
@@ -58,10 +59,6 @@ header {
   }
 }
 @media (max-width: 617px) {
-	body {
-		font-size: 50px !important;
-	}
-	
   #search-bar {
     width: 92%;
   }
@@ -117,14 +114,10 @@ header {
 
 .card-body {
   padding: 20px;
-
-	@media only screen and (max-width: 684px) {
-    font-size: 50px;
-  }
 }
 
 .card-calendar {
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
 #foot {
