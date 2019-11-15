@@ -23,27 +23,17 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/creation-dun-nouveau-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/hugo/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/posts/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/goisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -58,17 +48,7 @@
   </url>
   
   <url>
-    <loc>/posts/debuter-avec-hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/posts/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -78,22 +58,17 @@
   </url>
   
   <url>
-    <loc>/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/hugo/</loc>
+    <loc>/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/introduction-aux-modeles-hugo/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -110,16 +85,6 @@
   <url>
     <loc>/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/migrer-vers-hugo-depuis-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
