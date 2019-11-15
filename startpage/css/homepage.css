@@ -57,7 +57,11 @@ header {
     width: 88%;
   }
 }
-@media (min-width: 617px) {
+@media (max-width: 617px) {
+	body {
+		font-size: 50px !important;
+	}
+	
   #search-bar {
     width: 92%;
   }
@@ -113,6 +117,10 @@ header {
 
 .card-body {
   padding: 20px;
+
+	@media only screen and (max-width: 684px) {
+    font-size: 50px;
+  }
 }
 
 .card-calendar {
