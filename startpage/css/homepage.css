@@ -10,7 +10,7 @@ a {
 body {
   background-color: #e4ecee !important;
   background-image: url('../img/ep_naturalwhite.png');
-	font-size: 1.5rem;
+	font-size: 1.5rem !important;
 }
 .clear {
   clear: both;
