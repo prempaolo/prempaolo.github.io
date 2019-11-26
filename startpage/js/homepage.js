@@ -14,9 +14,14 @@ $(document).ready(function(){
 		$(".container").css("width", "100%");
 		$(".container").css("padding-left", "30px");
 		$(".container").css("padding-right", "30px");
-		$(".card-body").css("margin-top", "10px");
+		$(".card-body").css("margin-top", "40px");
+		$(".card-child").css("margin-top", "40px");
+		$(".card").css("border-radius", "20px");
+		$(".card-img-top").css("border-radius", "20px 20px 0 0");
 		$("#icons").css("font-size", "80px");
 		$("#search-bar").css("font-size", "20px");
+		$("#search-bar").css("width", "94%");
+		$("#search-bar").css("height", "45px");
 	}
 	
   $(".fa-search").click(function(){
@@ -285,7 +290,7 @@ function updatepostRandom(subreddit, image, postnum, cardnum, post_text) {
 			success: function(data){ 
 				if (image) {
 			try {
-				var low_res_img = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["resolutions"][2]["url"]).replace(/&amp;/g, '&');
+				var low_res_img = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
 				if(cardnum==3) {
 					source_img_3 = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
 				} else {
@@ -337,12 +342,12 @@ function updatepost(subreddit, image, postnum, cardnum, random) {
 			if (image) {
 	try {
 		if (subreddit=='Museum') {
-			var low_res_img = (data["data"]["children"][postnum]["data"]["preview"]["images"][0]["resolutions"][2]["url"]).replace(/&amp;/g, '&');
+			var low_res_img = (data["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
 			source_img_1 = (data["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
 			$('#img-card-' + cardnum).attr("src", low_res_img);	
 			$('#img-card-link-' + cardnum).attr("href","https://reddit.com" + data["data"]["children"][postnum]["data"]["permalink"]);
 		} else {
-			var low_res_img = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["resolutions"][2]["url"]).replace(/&amp;/g, '&');
+			var low_res_img = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
 			if(cardnum==3) {
 				source_img_3 = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
 			} else {
