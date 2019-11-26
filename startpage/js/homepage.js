@@ -254,11 +254,13 @@ $(document).ready(function(){
 }); // END document ready function
 
 function openModal_1() {
+		alert(screen.width-50);
     $('#modal-img-container').html("<img src='" + source_img_1 + "' alt='description' style='max-width: "+(screen.width-50)+"px;' />");
     $('#imagemodal').modal('show');
 }
 
 function openModal_3() {
+		alert(screen.width-50);
     $('#modal-img-container').html("<img src='" + source_img_3 + "' alt='description' style='max-width: "+(screen.width-50)+"px;' />");
     $('#imagemodal').modal('show');
 }
