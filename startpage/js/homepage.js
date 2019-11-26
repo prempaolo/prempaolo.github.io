@@ -8,7 +8,7 @@ window.mobilecheck = function() {
 
 $(document).ready(function(){
 // Search Bar Functionality
-
+	
 	if(window.mobilecheck()){
 		$("body").css("font-size","3.5rem");
 		$(".container").css("width", "100%");
@@ -75,7 +75,7 @@ $(document).ready(function(){
     }
   }); // END Keypress Function
 	
-	var rand = Math.floor((Math.random() * 6) + 1);
+	var rand = Math.floor((Math.random() * 7) + 1);
 	var subreddit1 = "EarthPorn";
 	var postnum1 = 1;
 	switch (rand) {
@@ -101,6 +101,10 @@ $(document).ready(function(){
 			break;
 		case 6:
 			subreddit1 = "FoodPorn";
+			postnum1 = 1;
+			break;
+		case 7:
+			subreddit1 = "Unixporn";
 			postnum1 = 1;
 			break;
 		default: 
@@ -250,12 +254,12 @@ $(document).ready(function(){
 }); // END document ready function
 
 function openModal_1() {
-    $('#modal-img-container').html("<img src='" + source_img_1 + "' alt='description' style='max-width: 1200;' />");
+    $('#modal-img-container').html("<img src='" + source_img_1 + "' alt='description' style='max-width: "+(screen.width-50)+"px;' />");
     $('#imagemodal').modal('show');
 }
 
 function openModal_3() {
-    $('#modal-img-container').html("<img src='" + source_img_3 + "' alt='description' style='max-width: 1200;' />");
+    $('#modal-img-container').html("<img src='" + source_img_3 + "' alt='description' style='max-width: "+(screen.width-50)+"px;' />");
     $('#imagemodal').modal('show');
 }
 

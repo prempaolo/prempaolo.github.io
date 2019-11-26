@@ -136,10 +136,15 @@ input[type=text] {
 
 .modal-dialog {
 	width: auto !important;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%) !important;
+	margin: 0px !important;
 }
 
 .modal-content {
-	width: 100% !important;
+	display: inline-block;
+	margin: 20px;
 }
 
 .googlebar-container {
