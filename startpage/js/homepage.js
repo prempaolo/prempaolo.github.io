@@ -10,7 +10,7 @@ $(document).ready(function(){
 // Search Bar Functionality
 
 	if(window.mobilecheck()){
-		alert('mobile!!');
+		$("body").css("font-size","3.5rem");
 	}
 	
   $(".fa-search").click(function(){
@@ -64,104 +64,6 @@ $(document).ready(function(){
     }
   }); // END Keypress Function
 	
-
-  	//ADD SUBREDDIT NAME AS PARAMETER AND MODIFY THE TITLE IN CARD WITH THAT VALUE
-
-    function updatepost(subreddit, image, postnum, cardnum, random) {
-    	if (random) {
-    		var url = 'https://www.reddit.com/r/' + subreddit + '/random.json?';
-    	} else {
-    		var url = 'https://www.reddit.com/r/' + subreddit + '/.json?';
-    	}
-    	$.ajax({
-      	type: "GET",
-      	url: url,
-      	async: true,
-      	dataType: 'json',
-      	success: function(data){ 
-      		if (image) {
-			try {
-				if (subreddit=='Museum') {
-					var low_res_img = (data["data"]["children"][postnum]["data"]["preview"]["images"][0]["resolutions"][2]["url"]).replace(/&amp;/g, '&');
-					source_img_1 = (data["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
-					$('#img-card-' + cardnum).attr("src", low_res_img);	
-					$('#img-card-link-' + cardnum).attr("href","https://reddit.com" + data["data"]["children"][postnum]["data"]["permalink"]);
-				} else {
-					var low_res_img = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["resolutions"][2]["url"]).replace(/&amp;/g, '&');
-					if(cardnum==3) {
-						source_img_3 = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
-					} else {
-						source_img_1 = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
-					}
-					$('#img-card-' + cardnum).attr("src", low_res_img);	
-					$('#img-card-link-' + cardnum).attr("href","https://reddit.com" + data[0]["data"]["children"][postnum]["data"]["permalink"]);
-				}
-			}
-			catch(err) {
-				$('#img-card-' + cardnum).remove();
-			}
-      		} else {
-      			$('#img-card-' + cardnum).remove();
-      		}
-        	var title = data["data"]["children"][postnum]["data"]["title"];
-			var score = data["data"]["children"][postnum]["data"]["score"];
-				$("#card-subreddit-title-" + cardnum).empty().append('<a href="https://www.reddit.com/r/'+ subreddit +'/" style="color: #000000">/r/'+ subreddit +'</a>');
-		  		$("#title-card-" + cardnum).empty().prepend(title);
-		  		$("#score-card-" + cardnum).empty().append('<i class="fa fa-heart"> </i>' + ' ' + score);
-		  		$("#title-card-link-" + cardnum).attr("href","https://reddit.com" + data["data"]["children"][postnum]["data"]["permalink"]);
-      		}, 
-      		error: function(errorMessage){
-        		alert("Reddit ajax call failed: "+errorMessage);
-	  		}
-      
-    	}); // END ajax call
-	}
-
-	function updatepostRandom(subreddit, image, postnum, cardnum, post_text) {
-    	var url = 'https://www.reddit.com/r/' + subreddit + '/random.json?';
-    	$.ajax({
-      	type: "GET",
-      	url: url,
-      	async: true,
-      	dataType: 'json',
-      	success: function(data){ 
-      		if (image) {
-				try {
-					var low_res_img = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["resolutions"][2]["url"]).replace(/&amp;/g, '&');
-					if(cardnum==3) {
-						source_img_3 = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
-					} else {
-						source_img_1 = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
-					}
-	      				$('#img-card-' + cardnum).attr("src", low_res_img);
-	      				$('#img-card-link-' + cardnum).attr("href","https://reddit.com" + data[0]["data"]["children"][postnum]["data"]["permalink"]);
-	      			}
-				catch(err) {
-					$('#img-card-' + cardnum).remove();
-				}
-      		} else {
-      			$('#img-card-' + cardnum).remove();
-      		}
-		if(post_text) {
-			var text = data[0]["data"]["children"][postnum]["data"]["selftext"];
-			$("#card-subreddit-text-body-" + cardnum).empty().prepend(text);
-			$("#toggle-collapse-" + cardnum).show();
-
-		}
-        	var title = data[0]["data"]["children"][postnum]["data"]["title"];
-			var score = data[0]["data"]["children"][postnum]["data"]["score"];
-				$("#card-subreddit-title-" + cardnum).empty().append('<a href="https://www.reddit.com/r/'+ subreddit +'/" style="color: #000000">/r/'+ subreddit +'</a>');
-		  		$("#title-card-" + cardnum).empty().prepend(title);
-		  		$("#score-card-" + cardnum).empty().append('<i class="fa fa-heart"> </i>' + ' ' + score);
-		  		$("#title-card-link-" + cardnum).attr("href","https://reddit.com" + data[0]["data"]["children"][postnum]["data"]["permalink"]);
-      		}, 
-      		error: function(errorMessage){
-        		alert("Reddit ajax call failed: "+errorMessage);
-	  		}
-      
-    	}); // END ajax call
-	}
-
 	var rand = Math.floor((Math.random() * 6) + 1);
 	var subreddit1 = "EarthPorn";
 	var postnum1 = 1;
@@ -211,7 +113,7 @@ $(document).ready(function(){
 		});
 	}
 
-   	var rand = Math.floor((Math.random() * 3) + 1);
+  var rand = Math.floor((Math.random() * 3) + 1);
 	var subreddit2 = "Confession";
 	var postnum2 = 0;
 	var textBody = false;
@@ -277,81 +179,63 @@ $(document).ready(function(){
 		});
 	}
 	
-var date = new Date();
-var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-var weekday = weekdays[date.getDay()];
-var month = date.getMonth();
-var monthday = date.getDate();
-var year = date.getYear();	
-$('#weekday').html(weekday);
-	
-switch (monthday) {
-	case 1:
-	case 21: 
-	case 31:
-    	var affix = "st";
-		$('#month-date').html(months[month] + ", " + monthday + affix);
-    	break;
-	case 2: 
-	case 22:
-    	var affix = "nd";
-		$('#month-date').html(months[month] + ", " + monthday + affix);
-    	break;
-	case 3: 
-	case 23:
-     	var affix = "rd";
-		$('#month-date').html(months[month] + ", " + monthday + affix);
-   	break;
-	case 4: 
-	case 5: 
-	case 6: 
-	case 7: 
-	case 8: 
-	case 9: 
-	case 10: 
-	case 11: 
-	case 12: 
-	case 13: 
-	case 14: 
-	case 15: 
-	case 16: 
-	case 17: 
-	case 18: 
-	case 19: 
-	case 20: 
-	case 24: 
-	case 25: 
-	case 26: 
-	case 27: 
-	case 28: 
-	case 29:
-	case 30:
-   	var affix = "th";
-		$('#month-date').html(months[month] + ", " + monthday + affix);
-}
-$('#year').html(year + 1900);
-// Gets Current BTC Price
-function btcprice() {
-var currency = "USD";
-var apiurl = 'https://api.coindesk.com/v1/bpi/currentprice/' + currency + '.json';
-    
-$.ajax({
-  type: "GET",
-  url: apiurl,
-  async: true,
-  dataType: 'json',
-  success: function(data){ 
-    var price = data["bpi"][currency]["rate_float"];
-	  var priceRounded = Math.round(price);
-	  $("#btc-price").append("$" + priceRounded + " " + currency);
-    }, 
-  error: function(errorMessage){
-      alert("ajax call failed");
-    }  
-}); // END ajax call	
-}
-btcprice();
+	var date = new Date();
+	var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+	var weekday = weekdays[date.getDay()];
+	var month = date.getMonth();
+	var monthday = date.getDate();
+	var year = date.getYear();	
+	$('#weekday').html(weekday);
+		
+	switch (monthday) {
+		case 1:
+		case 21: 
+		case 31:
+				var affix = "st";
+			$('#month-date').html(months[month] + ", " + monthday + affix);
+				break;
+		case 2: 
+		case 22:
+				var affix = "nd";
+			$('#month-date').html(months[month] + ", " + monthday + affix);
+				break;
+		case 3: 
+		case 23:
+				var affix = "rd";
+			$('#month-date').html(months[month] + ", " + monthday + affix);
+			break;
+		case 4: 
+		case 5: 
+		case 6: 
+		case 7: 
+		case 8: 
+		case 9: 
+		case 10: 
+		case 11: 
+		case 12: 
+		case 13: 
+		case 14: 
+		case 15: 
+		case 16: 
+		case 17: 
+		case 18: 
+		case 19: 
+		case 20: 
+		case 24: 
+		case 25: 
+		case 26: 
+		case 27: 
+		case 28: 
+		case 29:
+		case 30:
+			var affix = "th";
+			$('#month-date').html(months[month] + ", " + monthday + affix);
+	}
+	$('#year').html(year + 1900);
+
+	btcprice();
+
 }); // END document ready function
 
 function openModal_1() {
@@ -362,4 +246,122 @@ function openModal_1() {
 function openModal_3() {
     $('#modal-img-container').html("<img src='" + source_img_3 + "' alt='description' style='max-width: 1200;' />");
     $('#imagemodal').modal('show');
+}
+
+// Gets Current BTC Price
+function btcprice() {
+	var currency = "USD";
+	var apiurl = 'https://api.coindesk.com/v1/bpi/currentprice/' + currency + '.json';
+			
+	$.ajax({
+		type: "GET",
+		url: apiurl,
+		async: true,
+		dataType: 'json',
+		success: function(data){ 
+			var price = data["bpi"][currency]["rate_float"];
+			var priceRounded = Math.round(price);
+			$("#btc-price").append("$" + priceRounded + " " + currency);
+			}, 
+		error: function(errorMessage){
+				alert("ajax call failed");
+			}  
+	}); // END ajax call	
+}
+
+function updatepostRandom(subreddit, image, postnum, cardnum, post_text) {
+		var url = 'https://www.reddit.com/r/' + subreddit + '/random.json?';
+		$.ajax({
+			type: "GET",
+			url: url,
+			async: true,
+			dataType: 'json',
+			success: function(data){ 
+				if (image) {
+			try {
+				var low_res_img = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["resolutions"][2]["url"]).replace(/&amp;/g, '&');
+				if(cardnum==3) {
+					source_img_3 = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
+				} else {
+					source_img_1 = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
+				}
+							$('#img-card-' + cardnum).attr("src", low_res_img);
+							$('#img-card-link-' + cardnum).attr("href","https://reddit.com" + data[0]["data"]["children"][postnum]["data"]["permalink"]);
+						}
+			catch(err) {
+				$('#img-card-' + cardnum).remove();
+			}
+				} else {
+					$('#img-card-' + cardnum).remove();
+				}
+	if(post_text) {
+		var text = data[0]["data"]["children"][postnum]["data"]["selftext"];
+		$("#card-subreddit-text-body-" + cardnum).empty().prepend(text);
+		$("#toggle-collapse-" + cardnum).show();
+
+	}
+				var title = data[0]["data"]["children"][postnum]["data"]["title"];
+		var score = data[0]["data"]["children"][postnum]["data"]["score"];
+			$("#card-subreddit-title-" + cardnum).empty().append('<a href="https://www.reddit.com/r/'+ subreddit +'/" style="color: #000000">/r/'+ subreddit +'</a>');
+				$("#title-card-" + cardnum).empty().prepend(title);
+				$("#score-card-" + cardnum).empty().append('<i class="fa fa-heart"> </i>' + ' ' + score);
+				$("#title-card-link-" + cardnum).attr("href","https://reddit.com" + data[0]["data"]["children"][postnum]["data"]["permalink"]);
+				}, 
+				error: function(errorMessage){
+					alert("Reddit ajax call failed: "+errorMessage);
+			}
+		
+		}); // END ajax call
+}
+
+//ADD SUBREDDIT NAME AS PARAMETER AND MODIFY THE TITLE IN CARD WITH THAT VALUE
+
+function updatepost(subreddit, image, postnum, cardnum, random) {
+	if (random) {
+		var url = 'https://www.reddit.com/r/' + subreddit + '/random.json?';
+	} else {
+		var url = 'https://www.reddit.com/r/' + subreddit + '/.json?';
+	}
+	$.ajax({
+		type: "GET",
+		url: url,
+		async: true,
+		dataType: 'json',
+		success: function(data){ 
+			if (image) {
+	try {
+		if (subreddit=='Museum') {
+			var low_res_img = (data["data"]["children"][postnum]["data"]["preview"]["images"][0]["resolutions"][2]["url"]).replace(/&amp;/g, '&');
+			source_img_1 = (data["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
+			$('#img-card-' + cardnum).attr("src", low_res_img);	
+			$('#img-card-link-' + cardnum).attr("href","https://reddit.com" + data["data"]["children"][postnum]["data"]["permalink"]);
+		} else {
+			var low_res_img = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["resolutions"][2]["url"]).replace(/&amp;/g, '&');
+			if(cardnum==3) {
+				source_img_3 = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
+			} else {
+				source_img_1 = (data[0]["data"]["children"][postnum]["data"]["preview"]["images"][0]["source"]["url"]).replace(/&amp;/g, '&');
+			}
+			$('#img-card-' + cardnum).attr("src", low_res_img);	
+			$('#img-card-link-' + cardnum).attr("href","https://reddit.com" + data[0]["data"]["children"][postnum]["data"]["permalink"]);
+		}
+	}
+	catch(err) {
+		$('#img-card-' + cardnum).remove();
+	}
+			} else {
+				$('#img-card-' + cardnum).remove();
+			}
+			var title = data["data"]["children"][postnum]["data"]["title"];
+	var score = data["data"]["children"][postnum]["data"]["score"];
+		$("#card-subreddit-title-" + cardnum).empty().append('<a href="https://www.reddit.com/r/'+ subreddit +'/" style="color: #000000">/r/'+ subreddit +'</a>');
+			$("#title-card-" + cardnum).empty().prepend(title);
+			$("#score-card-" + cardnum).empty().append('<i class="fa fa-heart"> </i>' + ' ' + score);
+			$("#title-card-link-" + cardnum).attr("href","https://reddit.com" + data["data"]["children"][postnum]["data"]["permalink"]);
+			}, 
+			error: function(errorMessage){
+				alert("Reddit ajax call failed: "+errorMessage);
+		}
+	
+	}); // END ajax call
 }

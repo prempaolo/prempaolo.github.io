@@ -82,7 +82,7 @@ Follow the following steps:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/startpage/</guid>
-      <description>--     $(function(){ var includes = $(&#39;[data-include]&#39;); jQuery.each(includes, function(){ var file = &#39;views/&#39; + $(this).data(&#39;include&#39;) + &#39;.html&#39;; $(this).load(file); }); });  Startpage    Welcome                      --   
+      <description>--    $(function(){ var includes = $(&#39;[data-include]&#39;); jQuery.each(includes, function(){ var file = &#39;views/&#39; + $(this).data(&#39;include&#39;) + &#39;.html&#39;; $(this).load(file); }); });  Startpage    Welcome                      --   
 Next Post 
        BTC Price:      Show content     Next Post</description>
     </item>

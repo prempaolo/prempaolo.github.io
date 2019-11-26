@@ -4,13 +4,13 @@
 }
 a {
 	text-decoration: none !important;
-	color: black;
+	color: #337ab7;
 }	
 	
 body {
   background-color: #e4ecee !important;
   background-image: url('../img/ep_naturalwhite.png');
-	font-size: 1.5rem !important;
+	font-size: 1.5rem;
 }
 .clear {
   clear: both;
@@ -30,7 +30,6 @@ header {
   color: #7e8186;
   padding-right: 10px;
   padding-top: 5px;
-  font-size: 1.5rem;
 }
 .search {
   position: relative;
@@ -44,7 +43,6 @@ header {
   background-color: #ffffff;
   text-align: left;
   padding-left: 10px;
-  font-size: 1.5rem;
   border: 2px solid transparent;
   border-radius: 5px;
 }
@@ -116,10 +114,6 @@ header {
   padding: 20px;
 }
 
-.card-calendar {
-  font-size: 1.5rem;
-}
-
 #foot {
   padding-bottom: 20px;
 }
@@ -160,7 +154,6 @@ input[type=text] {
   border: none;
   background: transparent;
   color: white;
-  font-size: 1.5rem;
   font-family: "Quicksand", sans-serif; }
 .googlebar-container .googlebar #google-query-field::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
