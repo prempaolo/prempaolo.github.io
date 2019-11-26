@@ -135,7 +135,8 @@ input[type=text] {
 }
 
 .modal-dialog {
-	width: auto !important;
+	width: 100%;
+	padding: 15px;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%) !important;
@@ -143,8 +144,16 @@ input[type=text] {
 }
 
 .modal-content {
+	width: inherit;
 	display: inline-block;
-	margin: 20px;
+}
+
+.modal-body {
+	width: inherit !important;
+}
+
+#modal-img-container {
+	width: inherit !important;
 }
 
 .googlebar-container {
