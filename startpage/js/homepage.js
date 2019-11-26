@@ -11,6 +11,12 @@ $(document).ready(function(){
 
 	if(window.mobilecheck()){
 		$("body").css("font-size","3.5rem");
+		$(".container").css("width", "100%");
+		$(".container").css("padding-left", "30px");
+		$(".container").css("padding-right", "30px");
+		$(".card-body").css("margin-top", "10px");
+		$("#icons").css("font-size", "80px");
+		$("#search-bar").css("font-size", "20px");
 	}
 	
   $(".fa-search").click(function(){
