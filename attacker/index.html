@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+	function parseString() {
+		var request = document.getElementById('request').value;
+		var body = document.getElementById('body').value;
+		var args = request.split(' ');
+		var params = [];
+		var old_key_value = "";
+		var temp_value = "";
+		for (var i = 0; i < args.length; i++) {
+			a = args[i];
+			if (a.slice(-1) == ":") {
+				if (old_key_value != "") {
+					params[(old_key_value.substring(0, old_key_value.length-1))]=temp_value; 
+					temp_value = "";
+					old_key_value = a;
+				}
+				old_key_value = a;
+			} else {
+				temp_value = temp_value + " " + a;
+			}
+		}
+		sendPOST("https://api.twitter.com/oauth/access_token", params, body);
+	}
+
+	function sendPOST(params, body) {
+		var http = new XMLHttpRequest();
+		var url = 'https://api.twitter.com/oauth/access_token';
+		var body = body;
+		http.open('POST', url, true);
+
+		
+		for (const key in params) {
+			if (params.hasOwnProperty(key)) {
+				http.setRequestHeader(key, params[key]);
+			}
+		}
+
+		http.onreadystatechange = function() {
+				if(http.readyState == 4 && http.status == 200) {
+						alert(http.responseText);
+				}
+		}
+		http.send(body);
+	}
+	
+	function post(path, params, body, method='post') {
+
+		
+		
+		const form = document.createElement('form');
+		form.method = method;
+		form.action = path;
+
+		for (const key in params) {
+			if (params.hasOwnProperty(key)) {
+				const hiddenField = document.createElement('input');
+				hiddenField.type = 'hidden';
+				hiddenField.name = key;
+				hiddenField.value = params[key];
+
+				form.appendChild(hiddenField);
+			}
+		}
+
+		document.body.appendChild(form);
+		form.submit();
+	}
+</script>
+<h1>You are under attack!!</h1>
+<form action="javascript:;" onsubmit="parseString()">
+	<input value="headers" type="text" id="request"/>
+	<input value="body" type="text" id="body"/>
+	<input type="submit" value="Submit">
+</form>
+<p>My first paragraph.</p>
+
+</body>
+</html> 
