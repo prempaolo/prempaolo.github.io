@@ -6,7 +6,7 @@
     <description>Recent content on Paolo Prem</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,8 +17,8 @@
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&#39;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&#39;t cover using CSS to style your theme.
-We&#39;ll start with creating a new site with a very basic template.</description>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
@@ -29,7 +29,18 @@ We&#39;ll start with creating a new site with a very basic template.</descriptio
       <guid>/posts/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&#39;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>Goodbye ranger, welcome lf!</title>
+      <link>/posts/goodbye_ranger_welcome_lf/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/goodbye_ranger_welcome_lf/</guid>
+      <description>When I first saw Ranger, I immediately loved it. You can manage your files entirely from your command line in an awesome way. Here is a screenshot taken from their official repository:
+Its biggest flaw? Python!
+I started using it instead of the cd command to navigate through my filesystem and I noticed an incredibly annoying 1/2 seconds delay before its interface appears on my terminal. This is the reason I started to look for some faster alternatives.</description>
     </item>
     
     <item>
@@ -49,7 +60,7 @@ Uncle Meat - Frank Zappa Absolutely my favorite Zappa album.</description>
       <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Hi, I&#39;m Paolo Prem, this is my website and I will spend just few words about myself. My passion about computers and IT in general started very early, with the few video games I had and I could play on my potato computer, which I built myself. It was made of all the stuff my father could bring me home, motherboards, RAMs, hard disks, GPUs and so on, all parts that someone was throwing away.</description>
+      <description>Hi, I&amp;rsquo;m Paolo Prem, this is my website and I will spend just few words about myself. My passion about computers and IT in general started very early, with the few video games I had and I could play on my potato computer, which I built myself. It was made of all the stuff my father could bring me home, motherboards, RAMs, hard disks, GPUs and so on, all parts that someone was throwing away.</description>
     </item>
     
     <item>
@@ -82,8 +93,7 @@ Follow the following steps:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/attacker/</guid>
-      <description>   function parseString() { var request = document.getElementById(&#39;request&#39;).value; var body = document.getElementById(&#39;body&#39;).value; var args = request.split(&#39; &#39;); var params = []; var old_key_value = &#34;&#34;; var temp_value = &#34;&#34;; for (var i = 0; i You are under attack!!  My first paragraph.
-  </description>
+      <description></description>
     </item>
     
     <item>
@@ -92,9 +102,7 @@ Follow the following steps:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/startpage/</guid>
-      <description>--    $(function(){ var includes = $(&#39;[data-include]&#39;); jQuery.each(includes, function(){ var file = &#39;views/&#39; + $(this).data(&#39;include&#39;) + &#39;.html&#39;; $(this).load(file); }); });  Startpage    Welcome                      --   
-Next Post 
-       BTC Price:      Show content     Next Post</description>
+      <description></description>
     </item>
     
   </channel>

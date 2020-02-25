@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lf on Paolo Prem</title>
+    <link>/tags/lf/</link>
+    <description>Recent content in lf on Paolo Prem</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/lf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Goodbye ranger, welcome lf!</title>
+      <link>/posts/goodbye_ranger_welcome_lf/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/goodbye_ranger_welcome_lf/</guid>
+      <description>When I first saw Ranger, I immediately loved it. You can manage your files entirely from your command line in an awesome way. Here is a screenshot taken from their official repository:
+Its biggest flaw? Python!
+I started using it instead of the cd command to navigate through my filesystem and I noticed an incredibly annoying 1/2 seconds delay before its interface appears on my terminal. This is the reason I started to look for some faster alternatives.</description>
+    </item>
+    
+  </channel>
+</rss>
