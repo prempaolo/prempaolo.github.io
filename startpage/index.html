@@ -1,0 +1,144 @@
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:400,700" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/homepage.css">
+  <!-- <script type="text/javascript" src="js/createcard.js"></script> -->
+  <script type="text/javascript" src="js/homepage.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <script type="text/javascript" src="js/searchcomplete.js"></script>
+
+  <script>
+  $(function(){
+    var includes = $('[data-include]');
+    jQuery.each(includes, function(){
+      var file = 'views/' + $(this).data('include') + '.html';
+      $(this).load(file);
+    });
+  });
+  </script>
+
+	<title>Startpage</title>
+</head>
+
+<body>
+	<div id="parent" class="container">
+	  <!-- Navigation -->
+	  <header>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+    		<div class="navbar">
+    		  <div class="logo">
+    			<div class="textLogo">Welcome</div>
+    		  </div>
+    		  <br/>
+    		  <br/>
+    		  <div class="search">
+    			<i class="fa fa-search"></i>
+    			<input id="search-bar" type="text" placeholder="Search" autofocus="true">
+          <div class="googlebar-container" id="googlebar-container-id">
+            <div class="googlebar">
+              <div class="googlebar-suggestions" id="googlebar-suggestions">
+              </div>
+            </div>
+          </div>
+    		  </div>
+    		</div>  
+      </div>
+    </div>
+		<div id="icons" style="text-align: center;">
+			<a href="https://www.twitch.tv"><i style="padding-right: 10px; color: #96cec2;" class="fa fa-twitch"> </i></a> 
+			<a href="http://youtube.com/"><i style="padding-right: 10px; color: #858f97;" class="fa fa-youtube"> </i></a> 
+			<a href="https://reddit.musicplayer.io"><i style="color: #96cec2;" class="fa fa-music"> </i></a> 
+			<a href="http://reddit.com/"><i style="padding-left: 6px; padding-right: 14px; color: #858f97;" class="fa fa-reddit"> </i></a> 
+			<a href="http://github.com/"><i style="padding-right: 8px; color: #96cec2;" class="fa fa-github"> </i></a> 
+			<a href="https://twitter.com"><i style="color: #858f97;" class="fa fa-twitter"> </i></a>
+		</div>
+
+	  </header>
+
+	<!-- Card Layout -->
+
+	<div data-include="test"></div>
+
+    <div class="row">
+
+      <!-- First column -->
+
+      <div class="col-md-3 col-md-offset-2" id="first-column">
+          <div class="card">
+		  <!-- <a id="img-card-link-1"><img class="card-img-top" id="img-card-1" src=""></a> -->
+	    <img class="card-img-top" id="img-card-1" onclick="openModal_1()" src="">
+            <div class="card-body">
+              <div id="card-subreddit-title-1"></div>
+              <a id="title-card-link-1"><p id="title-card-1"></p></a>
+              <p class="score" id="score-card-1"><i class="fa fa-heart"></i></p>
+              <p id="next-post-1" style="cursor: pointer;">Next Post <i class="fa fa-arrow-right"> </i></p>
+            </div>
+          </div>
+      </div>
+
+      <!-- Second column -->
+
+      <div class="col-md-2" id="second-column">
+        <div class="card card-body card-calendar">
+         <div class="card-reg-header" id="weekday"></div>
+         <div class="card-reg-header" id="month-date"></div>
+         <div class="card-reg-header" id="year"></div>
+        </div>
+        <div class="card card-body card-child">
+          <div>BTC Price:</div>
+          <div id="btc-price" class="card-reg-left-sm" style="color: #ffd21f;"></div>
+        </div>
+      </div>
+
+      <!-- Third column -->
+
+      <div class="col-md-3" id="third-column">
+        <div class="card card-body" id="accordion-2">
+          <div id="card-subreddit-title-2"></div>
+          <a id="title-card-link-2"><p id="title-card-2"></p></a>
+	  <a hidden id="toggle-collapse-2" data-toggle="collapse" data-parent="#accordion-2" href="#collapse-2" style="color: #333">Show content</a>
+	  <div id="collapse-2" class="panel-collapse collapse">
+	    <div id="card-subreddit-text-body-2"></div>
+	  </div>
+	  <div style="margin-bottom: 10px"></div>
+          <p class="score" id="score-card-2"> <i class="fa fa-heart"> </i> </p> <p id="next-post-2" style="cursor: pointer;">Next Post <i class="fa fa-arrow-right"> </i></p>
+        </div>
+        <div class="card card-child">
+          <img class="card-img-top" id="img-card-3" onclick="openModal_3()" src="">          <div class="card-body">
+            <div id="card-subreddit-title-3"></div>
+            <a id="title-card-link-3"><p id="title-card-3"></p></a>
+            <p class="score" id="score-card-3"> </p>
+            <p id="next-post-3" style="cursor: pointer;">Next Thread <i class="fa fa-arrow-right"> </i></p>
+          </div>
+        </div>  
+      </div>
+    </div>
+</div>
+
+<!-- Modal -->
+
+ <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">              
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	<div id="modal-img-container"></div>
+	</div>
+    </div>
+  </div>
+</div>
+ <div id="foot"></div>
+</body>
