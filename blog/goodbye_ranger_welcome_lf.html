@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+<p>
+When I first saw <a href="https://github.com/ranger/ranger">Ranger</a>, I immediately loved it. You can manage your files entirely
+from your command line in an awesome way. Here is a screenshot taken from their official
+repository:
+</p>
+
+<img src="/img/blog/ranger.png" alt="Ranger" title="Ranger" style="width: 700px;"/>
+
+<p>
+Its biggest flaw? Python!
+</p>
+
+<p>
+I started using it instead of the `cd` command to navigate through my filesystem and I noticed an incredibly annoying 1/2 seconds delay before its interface appears on my terminal. This is the reason I started to look for some faster alternatives. I tried <a href="https://github.com/vifm/vifm">vifm</a> and <a href="https://github.com/jarun/nnn">nnn</a> but then I found <a href="https://github.com/gokcehan/lf">lf</a>, a file manager written in go. Not only it is faster than ranger, but it also looks very similar. Here is a screenshot taken from their official repository:
+</p>
+
+<img src="/img/blog/lf.png" alt="Lf" title="Lf" style="width: 700px;"/>
+
+<p>
+By default, when you close lf with the *q* key, it doesn't exit in the directory
+currently highlighted by lf but it returns to the one where you ran it. Since I am
+using it to navigate into my filesystem, I searched in their documentation how to
+achieve such goal. They provide a snippet of code that keeps track of the current
+directory and automatically `cd` into that. Here is the snippet:
+</p>
+
+<xmp>
+lfcd () {
+    tmp="$(mktemp)"
+    /bin/lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        if [ -d "$dir" ]; then
+            if [ "$dir" != "$(pwd)" ]; then
+                cd "$dir"
+            fi
+        fi
+    fi
+}
+</xmp>
+
+</p>
+Therefore, I created a new file, called *lfcd* and I sourced it in my `.zshrc`
+file (if you use bash, source it in you `.bashrc` file):
+</p>
+
+<xmp>
+source "/path/to/my/lfcd/file/lfcd.sh"
+</xmp>
+
+</body>
+</html>
