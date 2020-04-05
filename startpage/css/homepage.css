@@ -4,12 +4,13 @@
 }
 a {
 	text-decoration: none !important;
-	color: black;
+	color: #337ab7;
 }	
 	
 body {
   background-color: #e4ecee !important;
   background-image: url('../img/ep_naturalwhite.png');
+	font-size: 1.5rem;
 }
 .clear {
   clear: both;
@@ -29,7 +30,9 @@ header {
   color: #7e8186;
   padding-right: 10px;
   padding-top: 5px;
-  font-size: 20px
+}
+#icons {
+	font-size: 30px;
 }
 .search {
   position: relative;
@@ -43,7 +46,6 @@ header {
   background-color: #ffffff;
   text-align: left;
   padding-left: 10px;
-  font-size: 16px;
   border: 2px solid transparent;
   border-radius: 5px;
 }
@@ -57,7 +59,7 @@ header {
     width: 88%;
   }
 }
-@media (min-width: 617px) {
+@media (max-width: 617px) {
   #search-bar {
     width: 92%;
   }
@@ -115,10 +117,6 @@ header {
   padding: 20px;
 }
 
-.card-calendar {
-  font-size: 18px;
-}
-
 #foot {
   padding-bottom: 20px;
 }
@@ -137,11 +135,25 @@ input[type=text] {
 }
 
 .modal-dialog {
-	width: auto !important;
+	width: 100%;
+	padding: 15px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%) !important;
+	margin: 0px !important;
 }
 
 .modal-content {
-	width: 100% !important;
+	width: inherit;
+	display: inline-block;
+}
+
+.modal-body {
+	width: inherit !important;
+}
+
+#modal-img-container {
+	width: inherit !important;
 }
 
 .googlebar-container {
@@ -159,7 +171,6 @@ input[type=text] {
   border: none;
   background: transparent;
   color: white;
-  font-size: 1.5rem;
   font-family: "Quicksand", sans-serif; }
 .googlebar-container .googlebar #google-query-field::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
