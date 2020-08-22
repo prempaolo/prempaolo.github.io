@@ -4,9 +4,27 @@ html {
 }
 
 body {
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
 	font-size: 20px;
 	padding: 30px;
+}
+
+a {
+	color: #458588;
+}
+
+a:visited {
+  color: #b16286;
+}
+
+pre code {
+	/*background-color: #eee;*/
+	background-color: #3F3F3F;	
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+	color: #fff;
+	font-size: 15px;
 }
 
 .main, .main-blog {
@@ -29,12 +47,4 @@ body {
 .main-blog {
 	width: auto;
 	margin-top: 0px;
-}
-
-a {
-	color: #458588;
-}
-
-a:visited {
-  color: #b16286;
 }
