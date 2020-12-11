@@ -1,21 +1,39 @@
 html {
-	min-height: 100%;
+	height: 100%;
 	background-image: linear-gradient(#ff00c1, #9600ff);
 }
 
 body {
 	/*font-family: sans-serif;*/
+	height: 100%;
+	background-image: linear-gradient(#ff00c1, #9600ff);
 	font-family: 'Fira Sans';
 	font-size: 20px;
 	padding: 30px;
 }
 
 a {
-	color: #458588;
+  /*color: #458588;*/
+	color: #00fff9;
 }
 
 a:visited {
-  color: #b16286;
+  /*color: #b16286;*/
+	color: #ff00c1;
+}
+
+a:hover {
+	color: #9600ff;
+}
+
+.back {
+  /*color: #b16286;*/
+	color: #ff00c1;
+}
+
+.back:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 pre code {
@@ -39,6 +57,30 @@ pre code {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.19);
 }
 
+.card {
+	/*margin: auto;*/
+	/*margin-top: 30px;*/
+	z-index: 1;
+	width: inherit;
+	padding: 40px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.19);
+	max-height: 93vh;
+  overflow: auto;
+}
+
+.centered-block {
+	width: 700px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
 .center {
 	display: block;
   margin-left: auto;
@@ -48,4 +90,55 @@ pre code {
 .main-blog {
 	width: auto;
 	margin-top: 0px;
+}
+
+.card-content {
+	overflow-y: scroll;
+}
+
+.dot-container {
+ 	margin-top: -10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-red {
+	background-color: #f9604b;
+}
+
+.dot-yellow {
+	background-color: #f4bc30;
+}
+
+.dot-green {
+	background-color: #25c641;
+}
+
+.dot:hover {
+	cursor: pointer;
+}
+
+.home-img {
+	position: fixed;
+	top: 38%;
+	width: 590px;
+	z-index: 0;
+}
+
+.pizza {
+	z-index: 2;
+	position: fixed;
+	width: 500px;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px; /* Negative half of height. */
+	margin-left: -250px; /* Negative half of width. */
+	display: none;
 }
