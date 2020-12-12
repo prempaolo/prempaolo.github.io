@@ -1,12 +1,14 @@
 html {
 	height: 100%;
-	background-image: linear-gradient(#ff00c1, #9600ff);
+	background-image: linear-gradient(#ff00c1, #9600ff), linear-gradient(#9600ff, #ff00c1);
+	background-repeat: no-repeat, repeat;
 }
 
 body {
 	/*font-family: sans-serif;*/
 	height: 100%;
-	background-image: linear-gradient(#ff00c1, #9600ff);
+	background-image: linear-gradient(#ff00c1, #9600ff), linear-gradient(#9600ff, #ff00c1);
+	background-repeat: no-repeat, repeat;
 	font-family: 'Fira Sans';
 	font-size: 20px;
 	padding: 30px;
@@ -143,11 +145,20 @@ img {
 	display: none;
 }
 
-@media all and (max-width: 1090px) {
-  body {
-    font-size: 40px;
-  }
-  h1 {
-    font-size: 60px;
-  }
+@media all and (max-width: 1200px) and (min-width: 900px) {
+	body {
+		font-size: 35px;
+	}
+	h1 {
+		font-size: 55px;
+	}
+	.card {
+		margin-bottom: 40px;
+	}
+}
+
+@media all and (max-width: 899px) {
+	.card {
+		margin-bottom: 40px;
+	}
 }
