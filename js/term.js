@@ -23,15 +23,15 @@ window.onload = function() {
 			"home": home,
 			"blog": blog,
 			"charts": charts,
-			"startpage": startpage
+			"startpage": startpage,
 		};
 		var cmdsHelp = {
 			"clear": "Clears the screen",
 			"help": "Shows this help page",
 			"home": "Opens the home page",
-			"blog": "Opens the blog page",
+			"blog [article_id]": "Opens the blog page",
 			"charts": "Opens the charts page",
-			"startpage": "Opens the startpage page"
+			"startpage": "Opens the startpage page",
 		};
 		
 		var fauxInput = document.createElement('textarea');
@@ -84,7 +84,19 @@ window.onload = function() {
 		}
 
 		function blog(argv, argc) {
-			$("#main-content").load("dynamic_content/blog.html");
+			$("#main-content").load("dynamic_content/blog.html", function(){
+				if(argc>1) {
+					$('#blog-list li').each(function (i, li) {
+							// Extract the value of the blog to load from the href content
+							if(argv[1]==(i+1)){
+								var blog = $(li).find("a").first().attr("href").match(/'([^']+)'/)[1];
+								loadBlogContent(blog);
+							}
+							// do things with columns
+					});
+					//loadBlogContent("
+				}
+			});
 			return "";
 		}
 
@@ -104,7 +116,8 @@ window.onload = function() {
 		}
 
 		function help(argv, argc) {
-			writeToBuffer("\nCommands available:\n");
+		  stdout = renderStdOut("\nCommands available (optional arguments between {lblue}{bold}[]{/bold}{/lblue}):\n");
+			writeToBuffer(stdout);
 			let entries = Object.entries(cmdsHelp);
 			for (const [cmd, desc] of entries) {
 				stdout = renderStdOut("\t{lblue}{bold}"+cmd+"{/bold}{/lblue}: "+desc+"\n");
