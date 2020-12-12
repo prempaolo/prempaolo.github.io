@@ -12,7 +12,7 @@ window.onload = function() {
 	$("#term-container").append('<div class="card term-card"><div class="term term-focus" id="term"></div></div>'); 
 	if(window.mobileAndTabletCheck()==true) {
 		$("#term-container").hide();
-		$("body").addClass("mobile-body");
+		$("#main-content").css("margin-bottom", "40px");
 	}
 	function fauxTerm(config) {
 		
