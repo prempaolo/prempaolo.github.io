@@ -12,6 +12,10 @@ body {
 	padding: 30px;
 }
 
+.mobile-body {
+	font-size: 40px;
+}
+
 a {
   /*color: #458588;*/
 	color: #00fff9;
