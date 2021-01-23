@@ -85,6 +85,7 @@ window.onload = function() {
 
 		function blog(argv, argc) {
 			$("#main-content").load("dynamic_content/blog.html", function(){
+				currentContent="blog";
 				if(argc>1) {
 					$('#blog-list li').each(function (i, li) {
 							// Extract the value of the blog to load from the href content

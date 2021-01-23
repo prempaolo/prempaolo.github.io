@@ -1,7 +1,7 @@
 html {
 	height: 100%;
 	/*background-image: linear-gradient(#ff00c1, #9600ff), linear-gradient(#9600ff, #ff00c1);*/
-	background-image: linear-gradient(#bf64ff, #620067), linear-gradient(#620067, #bf64ff);
+	background-image: linear-gradient(#bf64ff, #280067), linear-gradient(#280067, #bf64ff);
 	background-repeat: no-repeat, repeat;
 }
 
@@ -9,7 +9,7 @@ body {
 	/*font-family: sans-serif;*/
 	height: 100%;
 	/*background-image: linear-gradient(#ff00c1, #9600ff), linear-gradient(#9600ff, #ff00c1);*/
-	background-image: linear-gradient(#bf64ff, #620067), linear-gradient(#620067, #bf64ff);
+	background-image: linear-gradient(#bf64ff, #2d0044), linear-gradient(#2d0044, #bf64ff);
 	background-repeat: no-repeat, repeat;
 	font-family: 'Inconsolata';
 	font-size: 20px;
@@ -136,6 +136,11 @@ img {
 	z-index: 0;
 }
 
+.img-index {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
 .pizza {
 	z-index: 2;
 	position: fixed;
@@ -148,7 +153,7 @@ img {
 	display: none;
 }
 
-@media all and (max-width: 1200px) and (min-width: 900px) {
+@media all and (max-width: 1199px) and (min-width: 900px) {
 	body {
 		font-size: 35px;
 	}
