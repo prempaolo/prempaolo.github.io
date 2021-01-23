@@ -2,7 +2,7 @@ html {
 	height: 100%;
 	/*background-image: linear-gradient(#ff00c1, #9600ff), linear-gradient(#9600ff, #ff00c1);*/
 	background-image: linear-gradient(#bf64ff, #2d0044), linear-gradient(#2d0044, #bf64ff);
-	ackground-repeat: no-repeat, repeat;
+	background-repeat: no-repeat, repeat;
 }
 
 body {
