@@ -15,17 +15,17 @@ Its biggest flaw? Python!
 	By default, when you close lf with the <i>q</i> key, it doesn't exit in the current directory, but it returns to the one where you ran it. Since I am	using it to navigate into my filesystem, I searched in their documentation how to	add this functionality. They provide a snippet of code that keeps track of the current directory and automatically <code>cd</code> into that. Here is the snippet:
 </p>
 <pre><code>lfcd () {
-tmp="$(mktemp)"
-/bin/lf -last-dir-path="$tmp" "$@"
-if [ -f "$tmp" ]; then
-		dir="$(cat "$tmp")"
-		rm -f "$tmp"
-		if [ -d "$dir" ]; then
-				if [ "$dir" != "$(pwd)" ]; then
-						cd "$dir"
-				fi
-		fi
-fi
+  tmp="$(mktemp)"
+  /bin/lf -last-dir-path="$tmp" "$@"
+  if [ -f "$tmp" ]; then
+      dir="$(cat "$tmp")"
+      rm -f "$tmp"
+      if [ -d "$dir" ]; then
+          if [ "$dir" != "$(pwd)" ]; then
+              cd "$dir"
+          fi
+      fi
+  fi
 }</code></pre>
 </p>
 	Therefore, I created a new file, called <i>lfcd</i> and I sourced it in my <code>.zshrc</code> (if you use bash, source it in you <code>.bashrc</code>):
