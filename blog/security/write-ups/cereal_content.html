@@ -1,0 +1,45 @@
+<h1>Cereal Write-Up</h1>
+
+- Enumeration:
+	- Found public repo with project it is using 
+	- dirb to search file
+	- nmap
+		- nmap reveal two domains
+		- set /etc/hosts with those domains
+		- enumeration on source.
+		- found .git
+			- git-dumper
+- How to forge valid JWT?
+	- Link to JWT vulnerabilities analysis post
+- Source code analysis:
+	- First problem, create valid JWT:
+		- Found key in git history
+	- Identify what's vulnerable: found deserialization problem (maybe post also on deserialization?)
+		- Local setup to test
+		- Found way to use download Helper to download file
+	- Another problem: bypass IP restriction
+	- Search public exploits
+	- Found XSS on markdown library
+		- Test XSS with XmlHttpRequest
+		- Receive some response!
+	- Prepare code to perform requests
+	- Poc with python
+	- Able to donwload shell
+	- visit /uploads/shell.aspx
+		- Shell back!!
+
+Priv Esc
+
+- Enumeration
+	- Found SeImpersonatePrivilege (maybe blog on Potatoes)
+	- Need a way to get System token
+	- Continue enumeration
+		- Found other web service on port 8080
+		- Chisel to visit it from my pc
+	- GraphQl (other blog post?)
+		- Retrieve all methods
+		- Found SSRF
+	- Combine SSRF with token steal:
+		- Generic Potato works over HTTP and SMB
+		- SSRF to localhost on port with Generic Potato
+		- Command execution as nt aythority system!!!
