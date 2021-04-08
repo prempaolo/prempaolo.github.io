@@ -1,3 +1,6 @@
 [submodule "minimal"]
 	path = minimal
 	url = https://github.com/prempaolo/website_minimal.git
+[submodule "recipes"]
+	path = recipes
+	url = https://github.com/prempaolo/recipes.git
