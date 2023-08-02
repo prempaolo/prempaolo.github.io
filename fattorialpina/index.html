@@ -10,10 +10,14 @@
  		<title>Fattoria Alpina</title>
  		<!-- Style Sheet -->
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<!-- Javascript -->	
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
+		<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   		<script>
@@ -33,7 +37,7 @@
 		<div class="container">
 			<div class="brand"> <div class="logo">
 					<a href="index.html">
-						<img style="width: 100px" src="img/icons/mountain.png">
+						<img style="max-width: 40%; height: auto;" src="img/icons/mountain.png">
 						<div class="logo-text">
 							<p class="big-logo">Fattoria</p>
 							<p class="small-logo">Alpina</p>
@@ -102,8 +106,8 @@
 		</div> <!-- container -->
 	</header> <!-- header -->
 
-	<div class="container">
-		<main>
+	<main>
+		<div class="container">
 			<div class="slider">
 				<div class="slide-1">
 					<img src="img/montagne.jpg">
@@ -136,55 +140,49 @@
 					<h2>I nostri prodotti piu' venduti</h2>
 					<h3>Step sbananep</h3>
 				</div>
-				<div class="product-content">
-					<div class="product">
-						<a href="product.html">
-							<img src="img/product/salsa.webp">
-						</a>
-						<div class="product-detail">
-							<h3>Salsa Alpina</h3>
-							<h2>Molto buona</h2>
-							<a href="#" onclick="addProduct('salsa1')">Add to Cart</a>
-							<p>10 euro</p>
-						</div>						
-					</div>
-					<div class="product">
-						<a href="product.html">
-							<img src="img/product/salsa.webp">
-						</a>
-						<div class="product-detail">
-							<h3>Salsa Alpina</h3>
-							<h2>Molto buona</h2>
-							<a href="#" onclick="addProduct('salsa2')">Add to Cart</a>
-							<p>10 euro</p>
-						</div>						
-					</div>
-					<div class="product">
-						<a href="product.html">
-							<img src="img/product/salsa.webp">
-						</a>
-						<div class="product-detail">
-							<h3>Salsa Alpina</h3>
-							<h2>Molto buona</h2>
-							<a href="#" onclick="addProduct('salsa3')">Add to Cart</a>
-							<p>10 euro</p>
-						</div>						
-					</div>
-					<div class="product">
-						<a href="product.html">
-							<img src="img/product/salsa.webp">
-						</a>
-						<div class="product-detail">
-							<h3>Salsa Alpina</h3>
-							<h2>Molto buona</h2>
-							<a href="#" onclick="addProduct('salsa4')">Add to Cart</a>
-							<p>10 euro</p>
-						</div>						
-					</div>
+				<div class="row product-content">
+						<div class="col-md-3" id="first-column">
+							<div class="product">
+								<a href="product.html">
+									<img src="img/product/salsa.webp">
+								</a>
+								<div class="product-detail">
+									<h3>Salsa Alpina</h3>
+									<h2>Molto buona</h2>
+									<a href="#" onclick="addProduct('salsa1')">Add to Cart</a>
+									<p>10 euro</p>
+								</div>						
+							</div>
+						</div>
+						<div class="col-md-3" id="second-column">
+							<div class="product">
+								<a href="product.html">
+									<img src="img/product/salsa.webp">
+								</a>
+								<div class="product-detail">
+									<h3>Salsa Alpina</h3>
+									<h2>Molto buona</h2>
+									<a href="#" onclick="addProduct('salsa2')">Add to Cart</a>
+									<p>10 euro</p>
+								</div>						
+							</div>
+						</div>
+						<div class="col-md-3" id="third-column">
+							<div class="product">
+								<a href="product.html">
+									<img src="img/product/salsa.webp">
+								</a>
+								<div class="product-detail">
+									<h3>Salsa Alpina</h3>
+									<h2>Molto buona</h2>
+									<a href="#" onclick="addProduct('salsa3')">Add to Cart</a>
+									<p>10 euro</p>
+								</div>						
+							</div>
+						</div>
 			</div> <!-- New Product Section -->
-
-		</main> <!-- Main Area -->
 	</div>
+</main> <!-- Main Area -->
 
 	<footer id="footer">
 	</footer> <!-- Footer Area -->

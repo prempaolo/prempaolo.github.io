@@ -30,6 +30,6 @@ $(document).ready(function(){
 	} );
 
 	$( "#shop-icon" ).on( "click", function() {
-		window.location.href = "mailto:step@sblep.sblep?subject="+getProducts();
+		window.location.href = "mailto:step@sblep.sblep?subject=Acquisti prodotti Fattoria Alpina&body=Salve Mazzimilione,%0AVorrei acquistare i seguenti prodotti del suo negozio molto bello: "+getProducts()+".%0ACome ci accordiamo per il pagamento?%0ACordialmente";
 	} );
 });

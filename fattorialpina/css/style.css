@@ -27,10 +27,7 @@ body{
 hr{
 	border: 1px solid rgba(236, 240, 241,0.3);
 }
-.container{
-	width: 960px;
-	margin: 0 auto;
-}
+
 .active{
 	background-color: var(--darkStaleGray) !important;
 	color: var(--khaki) !important;
@@ -46,7 +43,7 @@ header .brand{
 	align-items: center;
 }
 header .logo{
-	width: 280px;
+	max-width: 280px;
 	height: auto;
 }
 header .logo a{
@@ -166,6 +163,7 @@ header .search-bar{
 }
 header .form-group{
 	position: relative;
+	margin-bottom: -1rem;
 }
 header .form-group input{
 	width: 100%;
@@ -179,8 +177,8 @@ header .form-group input{
 }
 header .form-group img{
 	position: absolute;
-	right: 0px;
-	top: 5px;
+	right: 12px;
+	top: 2px;
 	cursor: pointer;
 }
 /* Content Styling */
@@ -264,18 +262,13 @@ main .new-product-section .product-section-heading h3{
 	padding-bottom: 8px;
 	border-bottom: 2px solid var(--khaki);
 }
-main .product-content{
-	margin-top: 40px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-column-gap: 25px;
-	grid-row-gap: 40px;
-}
 main .product-content .product img{
-	width: 100%;
-	height: 220px;
-	object-fit: cover;
-	margin-bottom: 10px;
+	max-width: 70%;
+	height: auto;
+	/*width: 100%;*/
+	/*height: 220px;*/
+	/*object-fit: cover;*/
+	/*margin-bottom: 10px;*/
 }
 main .product-content .product h3{
 	color: var(--khaki);
