@@ -184,7 +184,8 @@ header .form-group img{
 /* Content Styling */
 main{
 	height: auto;
-	background-color: var(--white);
+	background-color: var(--darkStaleGray);
+	/*background-color: var(--white);*/
 	padding: 30px;
 	margin-top: -40px;
 	margin-bottom: -40px;
@@ -235,6 +236,7 @@ main .slider .slider-text a{
 	border-radius: 30px;
 }
 main .new-product-section{
+	background-color: var(--white);
 	padding: 20px;
 	margin-top: 80px;
 	margin-bottom: 60px;
