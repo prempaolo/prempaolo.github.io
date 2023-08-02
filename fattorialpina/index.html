@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<!-- Javascript -->	
 		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -30,8 +31,7 @@
 
 	<header>
 		<div class="container">
-			<div class="brand">
-				<div class="logo">
+			<div class="brand"> <div class="logo">
 					<a href="index.html">
 						<img style="width: 100px" src="img/icons/mountain.png">
 						<div class="logo-text">
@@ -73,36 +73,9 @@
 							</table>
 						</div>
 					</div>
-					<div class="dropdown">
+					<div id="shop-icon" class="dropdown">
 						<img src="img/icons/shopping_cart.png">
-						<div class="dropdown-menu cart-item">
-							<table border="1">
-								<thead>
-									<tr>
-										<th>Image</th>
-										<th>Product Name</th>
-										<th class="center">Price</th>
-										<th class="center">Qty.</th>
-										<th class="center">Amount</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><img src="img/product/img1.jpg"></td>
-										<td>product name</td>
-										<td class="center">1200</td>
-										<td class="center">2</td>
-										<td class="center">2400</td>
-									</tr>
-									<tr>
-										<td><img src="img/product/img2.jpg"></td>
-										<td>product name</td>
-										<td class="center">1500</td>
-										<td class="center">2</td>
-										<td class="center">3000</td>
-									</tr>
-								</tbody>
-							</table>
+						<div id="shop-icon-child" class="dropdown-menu cart-item">
 						</div>
 					</div>
 				</div> <!-- shop icons -->
@@ -171,7 +144,7 @@
 						<div class="product-detail">
 							<h3>Salsa Alpina</h3>
 							<h2>Molto buona</h2>
-							<a href="#">Add to Cart</a>
+							<a href="#" onclick="addProduct('salsa1')">Add to Cart</a>
 							<p>10 euro</p>
 						</div>						
 					</div>
@@ -182,7 +155,7 @@
 						<div class="product-detail">
 							<h3>Salsa Alpina</h3>
 							<h2>Molto buona</h2>
-							<a href="#">Add to Cart</a>
+							<a href="#" onclick="addProduct('salsa2')">Add to Cart</a>
 							<p>10 euro</p>
 						</div>						
 					</div>
@@ -193,7 +166,7 @@
 						<div class="product-detail">
 							<h3>Salsa Alpina</h3>
 							<h2>Molto buona</h2>
-							<a href="#">Add to Cart</a>
+							<a href="#" onclick="addProduct('salsa3')">Add to Cart</a>
 							<p>10 euro</p>
 						</div>						
 					</div>
@@ -204,7 +177,7 @@
 						<div class="product-detail">
 							<h3>Salsa Alpina</h3>
 							<h2>Molto buona</h2>
-							<a href="#">Add to Cart</a>
+							<a href="#" onclick="addProduct('salsa4')">Add to Cart</a>
 							<p>10 euro</p>
 						</div>						
 					</div>
